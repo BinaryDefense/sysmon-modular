@@ -41,7 +41,7 @@
           <OriginalFileName name="technique_id=T1218.004,technique_name=InstallUtil" condition="is">InstallUtil.exe</OriginalFileName>
           <CommandLine name="technique_id=T1218.004,technique_name=InstallUtil" condition="contains all">/logfile=;/LogToConsole=false;/U</CommandLine>
         </Rule>
-        <OriginalFileName name="technique_id=T1218.002,technique_name=rundll32.exe" condition="contains">rundll32.exe</OriginalFileName>
+        <Image name="technique_id=T1218.002,technique_name=rundll32.exe" condition="contains">rundll32.exe</Image>
         <OriginalFileName name="technique_id=T1546.008,technique_name=Windows Error Reporting" condition="contains">werfault.exe</OriginalFileName>
         <OriginalFileName name="technique_id=T1033,technique_name=System Owner/User Discovery" condition="is">whoami.exe</OriginalFileName>
         <OriginalFileName name="technique_id=T1016,technique_name=System Network Configuration Discovery" condition="is">ipconfig.exe</OriginalFileName>
