@@ -1,0 +1,9 @@
+<Sysmon schemaversion="4.70">
+  <EventFiltering>
+    <RuleGroup groupRelation="or">
+        <RegistryEvent onmatch="include">
+            <TargetObject name="technique_id=T1564,technique_name=Hide Artifacts" condition="begin with">HKLM\SYSTEM\MountedDevices</TargetObject>
+        </RegistryEvent>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>
