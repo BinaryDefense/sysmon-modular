@@ -6,7 +6,8 @@
 				<Image name="technique_id=T1053,technique_name=Scheduled Task" condition="image">at.exe</Image> <!--Microsoft:Windows: Remote task scheduling | Credit @ion-storm -->
 				<Image name="technique_id=T1218,technique_name=Signed Binary Proxy Execution" condition="image">certutil.exe</Image> <!--Microsoft:Windows: Certificate tool can contact outbound | Credit @ion-storm and @FVT [ https://twitter.com/FVT/status/834433734602530817 ] -->
 				<Image condition="image">cmd.exe</Image> <!--Microsoft:Windows: Command prompt-->
-				<Image condition="image">explorer.exe</Image> <!--Microsoft:Windows: Command prompt-->
+				<Image condition="image">svchost.exe</Image>
+				<Image condition="image">explorer.exe</Image>
 				<Image name="technique_id=T1218,technique_name=Signed Script Proxy Execution" condition="image">cscript.exe</Image> <!--Microsoft:WindowsScriptingHost: | Credit @Cyb3rOps [ https://gist.github.com/Neo23x0/a4b4af9481e01e749409 ] -->
 				<Image condition="image">java.exe</Image> <!--Java: Monitor usage of vulnerable application | Credit @ion-storm -->
 				<Image name="technique_id=T1218.005,technique_name=Mshta" condition="image">mshta.exe</Image> <!--Microsoft:Windows: HTML application executes scripts without IE protections | Credit @ion-storm [ https://en.wikipedia.org/wiki/HTML_Application ] -->
