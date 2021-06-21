@@ -896,6 +896,7 @@
         <TargetObject name="technique_id=T1548.002,technique_name=Bypass User Access Control" condition="contains">Classes\exefile\shell\runas\command\isolatedCommand</TargetObject>
         <TargetObject name="technique_id=T1546.015,technique_name=Component Object Model Hijacking" condition="contains">Software\Classes\CLSID</TargetObject>
         <TargetObject name="technique_id=T1098,technique_name=Account Manipulation" condition="contains">\services\Netlogon\Parameters\DisablePasswordChange</TargetObject>
+        <TargetObject name="technique_id=T1564,technique_name=Hide Artifacts" condition="begin with">HKLM\SYSTEM\MountedDevices</TargetObject>
         <TargetObject name="technique_id=T1546.010,technique_name=Appinit DLLs" condition="begin with">HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Windows\Appinit_Dlls</TargetObject>
         <TargetObject name="technique_id=T1546.010,technique_name=Appinit DLLs" condition="begin with">HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Windows\Appinit_Dlls</TargetObject>
         <TargetObject name="technique_id=T1103,techniqu_name=Signed Binary Proxy Execution" condition="begin with">HKLM\Software\Microsoft\WAB\DLLPath</TargetObject>
