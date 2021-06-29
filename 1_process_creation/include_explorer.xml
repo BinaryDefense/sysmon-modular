@@ -3,6 +3,8 @@
     <RuleGroup name="" groupRelation="or">
       <ProcessCreate onmatch="include">
         <ParentCommandLine name="technique_id=T1204,technique_name=User Execution" condition="is">C:\Windows\explorer.exe</ParentCommandLine>
+        <ParentCommandLine name="technique_id=T1204,technique_name=User Execution" condition="is">C:\Windows\SysWOW64\explorer.exe</ParentCommandLine>
+        <Image name="New Explorer Process Creation" condition="is">explorer.exe</Image>
       </ProcessCreate>
     </RuleGroup>
   </EventFiltering>

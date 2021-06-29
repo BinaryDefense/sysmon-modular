@@ -29,6 +29,8 @@
         <CommandLine name="technique_id=T1027,technique_name=Obfuscated Files or Information" condition="contains">ˆ</CommandLine>
         <CommandLine name="technique_id=T1027,technique_name=Obfuscated Files or Information" condition="contains">../../</CommandLine>
         <ParentCommandLine name="technique_id=T1204,technique_name=User Execution" condition="is">C:\Windows\explorer.exe</ParentCommandLine>
+        <ParentCommandLine name="technique_id=T1204,technique_name=User Execution" condition="is">C:\Windows\SysWOW64\explorer.exe</ParentCommandLine>
+        <Image name="New Explorer Process Creation" condition="is">explorer.exe</Image>
         <Rule name="Fltmc" groupRelation="and">
           <OriginalFileName name="technique_id=T1054,technique_name=Indicator Blocking" condition="is">fltMC.exe</OriginalFileName>
           <CommandLine name="technique_id=T1054,technique_name=Indicator Blocking" condition="contains">unload;detach</CommandLine>
