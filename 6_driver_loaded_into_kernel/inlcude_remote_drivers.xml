@@ -1,0 +1,9 @@
+<Sysmon schemaversion="4.40">
+	<EventFiltering>
+		<RuleGroup name="" groupRelation="or">
+			<DriverLoad onmatch="include">
+                <ImageLoaded name="Remote Driver Load" condition="contains">\\</ImageLoaded>
+			</DriverLoad>
+		</RuleGroup>
+	</EventFiltering>
+</Sysmon>

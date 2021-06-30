@@ -579,7 +579,9 @@
     </RuleGroup>
     <RuleGroup name="" groupRelation="or">
       <!-- Event ID 6 == Driver Loaded. -->
-      <DriverLoad onmatch="include" />
+      <DriverLoad onmatch="include">
+        <ImageLoaded name="Remote Driver Load" condition="contains">\\</ImageLoaded>
+      </DriverLoad>
     </RuleGroup>
     <RuleGroup name="" groupRelation="or">
       <!-- Event ID 7 == Image Loaded. -->
