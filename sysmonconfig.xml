@@ -653,6 +653,7 @@
         <ImageLoaded name="technique_id=T1059.001,technique_name=PowerShell" condition="end with">Microsoft.PowerShell.ConsoleHost.dll</ImageLoaded>
         <ImageLoaded name="technique_id=T1059.001,technique_name=PowerShell" condition="end with">Microsoft.PowerShell.Security.dll</ImageLoaded>
         <ImageLoaded name="technique_id=1053,technique_name=Scheduled Task" condition="end with">taskschd.dll</ImageLoaded>
+        <Image name="Microsoft Spool Service" condition="is">spoolsv.exe</Image>
         <ImageLoaded name="technique_id=T1218.010,technique_name=Regsvr32" condition="end with">scrobj.dll</ImageLoaded>
         <ImageLoaded name="technique_id=T1073,technique_name=DLL Side-Loading" condition="contains any">admin$;c$;\\;\appdata\;\temp\</ImageLoaded>
         <ImageLoaded condition="begin with" name="technique_id=T1073,technique_name=DLL Side-Loading">c:\programdata\</ImageLoaded>

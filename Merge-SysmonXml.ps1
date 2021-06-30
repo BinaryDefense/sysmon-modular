@@ -152,7 +152,7 @@ function Merge-SysmonXml {
     }
 
     $newDoc = [xml]@'
-<Sysmon schemaversion="4.50">
+<Sysmon schemaversion="4.70">
 <DriverName>SysDrv</DriverName>
 <HashAlgorithms>SHA256</HashAlgorithms> <!-- This now also determines the file names of the files preserved (String) -->
 <CheckRevocation/>
