@@ -1,0 +1,7 @@
+<Sysmon schemaversion="4.70">
+  <EventFiltering>
+  <ImageLoad onmatch="include">
+    <Image name="Microsoft Spool Service" condition="is">spoolsv.exe</Image>
+    </ImageLoad>
+  </EventFiltering>
+</Sysmon>
