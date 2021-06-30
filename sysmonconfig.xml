@@ -844,6 +844,7 @@
         <Image condition="image">rundll32.exe</Image>
         <TargetFilename condition="begin with">C:\Windows\System32\Tasks</TargetFilename>
         <TargetFilename condition="begin with">C:\Windows\Tasks\</TargetFilename>
+        <Image name="Microsoft Spool Service" condition="is">spoolsv.exe</Image>
         <TargetFilename condition="contains">\Start Menu</TargetFilename>
         <TargetFilename condition="contains">\Startup</TargetFilename>
         <TargetFilename name="technique_id=T1044,technique_name=File System Permissions Weakness" condition="begin with">C:\Windows\SysWoW64</TargetFilename>
